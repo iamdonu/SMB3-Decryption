@@ -1,6 +1,6 @@
 # SMB3-Decryption
 
-Special Thanks to @khr0x40sh (https://x.com/khr0x40sh) and his article on Medium (https://medium.com/maverislabs/decrypting-smb3-traffic-with-just-a-pcap-absolutely-maybe-712ed23ff6a2) for providing the idea and doing all the background research. I have merely adapted his Python code to Python3, also created a new file that calculates randomeSessionKey using NTLM hash in stead of password. 
+Special Thanks to @khr0x40sh (https://x.com/khr0x40sh) and his article on Medium (https://medium.com/maverislabs/decrypting-smb3-traffic-with-just-a-pcap-absolutely-maybe-712ed23ff6a2) for providing the idea and doing the background research. I adapted his Python code to Python3, also created a new file that calculates randomeSessionKey using NTLM hash in stead of password. 
 
 ## The idea : 
 SMB3 encrypted traffic can be decrypted based on the information present in the captured packets, specifically, using SessionID and SessionKey values. 
